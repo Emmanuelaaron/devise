@@ -1,0 +1,7 @@
+<% @users.each do |user|%>
+<ul>
+<li>
+    <%=link_to "#{user.email}", user_path(user.id)%>
+</li>
+</ul>
+<%end%>
